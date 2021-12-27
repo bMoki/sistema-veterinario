@@ -4,16 +4,16 @@ import javax.annotation.processing.Generated;
 import javax.persistence.metamodel.ListAttribute;
 import javax.persistence.metamodel.SingularAttribute;
 import javax.persistence.metamodel.StaticMetamodel;
-import model.Especie;
-import model.Pet;
+import model.Consulta;
+import model.Produto;
 
 @Generated(value="org.eclipse.persistence.internal.jpa.modelgen.CanonicalModelProcessor", date="2021-12-27T16:23:07", comments="EclipseLink-2.7.7.v20200504-rNA")
-@StaticMetamodel(Raca.class)
-public class Raca_ { 
+@StaticMetamodel(Receita.class)
+public class Receita_ { 
 
-    public static volatile SingularAttribute<Raca, Especie> especie;
-    public static volatile ListAttribute<Raca, Pet> pets;
-    public static volatile SingularAttribute<Raca, String> nome;
-    public static volatile SingularAttribute<Raca, Long> id;
+    public static volatile SingularAttribute<Receita, String> orientacao;
+    public static volatile ListAttribute<Receita, Produto> produtos;
+    public static volatile SingularAttribute<Receita, Long> id;
+    public static volatile SingularAttribute<Receita, Consulta> consulta;
 
 }

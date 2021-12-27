@@ -16,17 +16,17 @@ public class Pessoa  {
     private String nome;
     @Column(nullable = false)
     private String senha;
-
+    @Column(nullable = false)
     private String numero_celular;
-
+    @Column(nullable = false)
     private String email;
-
+    @Column(nullable = false)
     private Calendar data_nascimento;
-
+    @Column(nullable = false)
     private String cep;
-
+    @Column(nullable = false)
     private String endereco;
-
+    @Column
     private String complemento;
 
     public Pessoa() {}

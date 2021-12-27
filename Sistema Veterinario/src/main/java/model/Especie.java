@@ -10,6 +10,7 @@ public class Especie {
     @GeneratedValue(generator = "seq_especie",strategy = GenerationType.SEQUENCE)
     private Long id;
 
+    @Column(nullable = false)
     private String nome;
 
     @OneToMany(mappedBy = "especie")
@@ -17,6 +18,7 @@ public class Especie {
 
     public Especie() {
     }
+
 
     public List<Raca> getRacas() {
         return racas;

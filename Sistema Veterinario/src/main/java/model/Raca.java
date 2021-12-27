@@ -9,7 +9,7 @@ public class Raca {
     @SequenceGenerator(name = "seq_raca",sequenceName = "seq_raca_id", allocationSize = 1)
     @GeneratedValue(generator = "seq_raca",strategy = GenerationType.SEQUENCE)
     private Long id;
-
+    @Column(nullable = false)
     private String nome;
 
     @ManyToOne

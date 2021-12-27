@@ -1,20 +1,44 @@
 package model;
 
-import javax.persistence.DiscriminatorValue;
-import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
+import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @DiscriminatorValue("F")
 public class Funcionario extends Pessoa {
+
+    @Column(nullable = false)
     private String numero_ctps;
+    @Column(nullable = false)
     private String numero_pis;
 
     @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
     private Cargo cargo;
 
+    @OneToMany(mappedBy = "funcionario")
+    private List<Venda> vendas;
+
+    @OneToMany(mappedBy = "funcionario")
+    private List<Agenda> agendas;
+
     public Funcionario() {
+    }
+
+    public List<Venda> getVendas() {
+        return vendas;
+    }
+
+    public void setVendas(List<Venda> vendas) {
+        this.vendas = vendas;
+    }
+
+    public List<Agenda> getAgendas() {
+        return agendas;
+    }
+
+    public void setAgendas(List<Agenda> agendas) {
+        this.agendas = agendas;
     }
 
     public Cargo getCargo() {

@@ -1,5 +1,6 @@
 package model;
 
+import javax.persistence.Column;
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
@@ -9,12 +10,25 @@ import java.util.List;
 @Entity
 @DiscriminatorValue("C")
 public class Cliente extends Pessoa {
+
+    @Column
     private Calendar data_ultima_visita;
 
     @OneToMany(mappedBy = "cliente")
     private List<Pet> pets;
 
+    @OneToMany(mappedBy = "cliente")
+    private List<Venda> vendas;
+
     public Cliente() {
+    }
+
+    public List<Venda> getVendas() {
+        return vendas;
+    }
+
+    public void setVendas(List<Venda> vendas) {
+        this.vendas = vendas;
     }
 
     public List<Pet> getPets() {

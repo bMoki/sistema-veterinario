@@ -1,5 +1,7 @@
 package model.dao;
 
+import java.util.List;
+
 public interface InterfacePersistencia {
 
     Boolean conexaoAberta();
@@ -8,9 +10,10 @@ public interface InterfacePersistencia {
 
     public Object find(Class c, Object id)throws Exception;
 
-    public void persist(Object o) throws Exception;
+    public Object persist(Object o) throws Exception;
 
-    public  void remover (Object o)throws Exception;
+    public  Object remover (Object o)throws Exception;
 
-    //public List<Receita> listReceitas();
+    public List findAll(Class c) throws Exception;
+
 }

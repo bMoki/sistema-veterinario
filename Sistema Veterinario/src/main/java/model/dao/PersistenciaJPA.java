@@ -3,6 +3,7 @@ package model.dao;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import java.util.List;
 
 public class PersistenciaJPA implements InterfacePersistencia{
     public EntityManagerFactory factory;
@@ -29,12 +30,17 @@ public class PersistenciaJPA implements InterfacePersistencia{
     }
 
     @Override
-    public void persist(Object o) throws Exception {
-
+    public Object persist(Object o) throws Exception {
+        return null;
     }
 
     @Override
-    public void remover(Object o) throws Exception {
+    public Object remover(Object o) throws Exception {
+        return null;
+    }
 
+    @Override
+    public List findAll(Class c) throws Exception {
+        return null;
     }
 }

@@ -7,7 +7,7 @@ import javax.persistence.OneToMany;
 import java.util.List;
 
 @Entity
-@DiscriminatorValue("P")
+@DiscriminatorValue("FO")
 public class Fornecedor extends Pessoa{
     @Column(nullable = false)
     private String cnpj;

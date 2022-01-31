@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.util.List;
 
 @Entity
-@DiscriminatorValue("F")
+@DiscriminatorValue("FU")
 public class Funcionario extends Pessoa {
 
     @Column(nullable = false)

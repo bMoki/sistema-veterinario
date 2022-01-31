@@ -8,7 +8,7 @@ import javax.persistence.metamodel.StaticMetamodel;
 import model.Pet;
 import model.Venda;
 
-@Generated(value="org.eclipse.persistence.internal.jpa.modelgen.CanonicalModelProcessor", date="2021-12-27T16:23:07", comments="EclipseLink-2.7.7.v20200504-rNA")
+@Generated(value="org.eclipse.persistence.internal.jpa.modelgen.CanonicalModelProcessor", date="2022-01-18T15:14:51", comments="EclipseLink-2.7.7.v20200504-rNA")
 @StaticMetamodel(Cliente.class)
 public class Cliente_ extends Pessoa_ {
 

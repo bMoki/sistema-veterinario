@@ -1,4 +1,4 @@
-package model;
+package lpoo.model;
 
 import javax.persistence.*;
 import java.util.Calendar;
@@ -30,6 +30,11 @@ public class Agenda {
     private Medico medico;
 
     public Agenda() {
+    }
+
+    @Override
+    public String toString() {
+        return this.getId().toString();
     }
 
     public TipoProduto getTipoProduto() {

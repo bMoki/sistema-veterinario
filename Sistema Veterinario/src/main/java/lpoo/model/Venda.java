@@ -1,4 +1,4 @@
-package model;
+package lpoo.model;
 
 import javax.persistence.*;
 import java.util.Calendar;
@@ -41,6 +41,11 @@ public class Venda {
     private Funcionario funcionario;
 
     public Venda() {
+    }
+
+    @Override
+    public String toString() {
+        return String.valueOf(this.getId());
     }
 
     public Pagamento getPagamento() {

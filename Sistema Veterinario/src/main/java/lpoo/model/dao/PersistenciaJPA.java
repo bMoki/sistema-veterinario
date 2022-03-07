@@ -1,4 +1,6 @@
-package model.dao;
+package lpoo.model.dao;
+
+import lpoo.model.Pessoa;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -43,4 +45,10 @@ public class PersistenciaJPA implements InterfacePersistencia{
     public List findAll(Class c) throws Exception {
         return null;
     }
+
+    @Override
+    public Pessoa doLogin(String email, String senha) throws Exception {
+        return null;
+    }
+
 }

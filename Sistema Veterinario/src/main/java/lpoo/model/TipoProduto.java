@@ -1,4 +1,4 @@
-package model;
+package lpoo.model;
 
 public enum TipoProduto {
     MEDICAMENTO,

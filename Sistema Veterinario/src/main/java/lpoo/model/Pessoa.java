@@ -1,4 +1,4 @@
-package model;
+package lpoo.model;
 
 import javax.persistence.*;
 import java.util.Calendar;
@@ -28,8 +28,18 @@ public class Pessoa  {
     private String endereco;
     @Column
     private String complemento;
+    @Column
+    private Calendar data_cadastro;
 
     public Pessoa() {}
+
+    public Calendar getData_cadastro() {
+        return data_cadastro;
+    }
+
+    public void setData_cadastro(Calendar data_cadastro) {
+        this.data_cadastro = data_cadastro;
+    }
 
     public String getCpf() {
         return cpf;

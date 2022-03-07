@@ -1,4 +1,4 @@
-package model;
+package lpoo.model;
 
 import javax.persistence.*;
 import java.util.Calendar;

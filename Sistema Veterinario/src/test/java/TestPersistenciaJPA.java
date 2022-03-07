@@ -1,4 +1,4 @@
-import model.dao.PersistenciaJPA;
+import lpoo.model.dao.PersistenciaJPA;
 import org.junit.Test;
 
 public class TestPersistenciaJPA {

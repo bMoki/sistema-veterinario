@@ -1,4 +1,4 @@
-package model;
+package lpoo.model;
 
 import javax.persistence.*;
 import java.util.List;
@@ -23,6 +23,11 @@ public class Funcionario extends Pessoa {
     private List<Agenda> agendas;
 
     public Funcionario() {
+    }
+
+    @Override
+    public String toString() {
+        return this.getCpf();
     }
 
     public List<Venda> getVendas() {

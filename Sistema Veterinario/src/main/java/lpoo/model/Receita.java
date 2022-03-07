@@ -1,4 +1,4 @@
-package model;
+package lpoo.model;
 
 import javax.persistence.*;
 import java.util.List;
@@ -23,6 +23,14 @@ public class Receita {
     private List<Produto> produtos;
 
     public Receita() {
+    }
+
+    @Override
+    public String toString() {
+        if(this.getId() != null){
+            return this.getId().toString();
+        }
+        return "";
     }
 
     public Consulta getConsulta() {

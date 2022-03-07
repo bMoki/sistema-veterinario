@@ -1,4 +1,4 @@
-package model;
+package lpoo.model;
 
 import javax.persistence.Column;
 import javax.persistence.DiscriminatorValue;
@@ -18,6 +18,11 @@ public class Fornecedor extends Pessoa{
     private List<Produto> produtos;
 
     public Fornecedor() {
+    }
+
+    @Override
+    public String toString() {
+        return this.getNome();
     }
 
     public List<Produto> getProdutos() {

@@ -1,4 +1,4 @@
-package model;
+package lpoo.model;
 
 import javax.persistence.*;
 
@@ -24,6 +24,18 @@ public class Produto {
     private Fornecedor fornecedor;
 
     public Produto() {
+    }
+
+    @Override
+    public String toString() {
+        return this.getNome();
+    }
+
+    public Boolean equals(Produto produto){
+        if(this.getId() == produto.getId()){
+            return true;
+        }
+        return false;
     }
 
     public TipoProduto getTipoProduto() {

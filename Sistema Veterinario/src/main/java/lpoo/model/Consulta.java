@@ -1,4 +1,4 @@
-package model;
+package lpoo.model;
 
 import javax.persistence.*;
 import java.util.Calendar;
@@ -31,6 +31,11 @@ public class Consulta {
     private List<Receita> receitas;
 
     public Consulta() {
+    }
+
+    @Override
+    public String toString() {
+        return this.getObservacao();
     }
 
     public Pet getPet() {

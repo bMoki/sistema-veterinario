@@ -7,7 +7,7 @@ import javax.persistence.metamodel.StaticMetamodel;
 import lpoo.model.Consulta;
 import lpoo.model.Produto;
 
-@Generated(value="org.eclipse.persistence.internal.jpa.modelgen.CanonicalModelProcessor", date="2022-03-07T16:45:15", comments="EclipseLink-2.7.7.v20200504-rNA")
+@Generated(value="org.eclipse.persistence.internal.jpa.modelgen.CanonicalModelProcessor", date="2022-03-09T15:33:52", comments="EclipseLink-2.7.7.v20200504-rNA")
 @StaticMetamodel(Receita.class)
 public class Receita_ { 
 

@@ -9,7 +9,7 @@ import lpoo.model.Medico;
 import lpoo.model.Pet;
 import lpoo.model.Receita;
 
-@Generated(value="org.eclipse.persistence.internal.jpa.modelgen.CanonicalModelProcessor", date="2022-03-07T16:20:37", comments="EclipseLink-2.7.7.v20200504-rNA")
+@Generated(value="org.eclipse.persistence.internal.jpa.modelgen.CanonicalModelProcessor", date="2022-03-09T15:33:52", comments="EclipseLink-2.7.7.v20200504-rNA")
 @StaticMetamodel(Consulta.class)
 public class Consulta_ { 
 

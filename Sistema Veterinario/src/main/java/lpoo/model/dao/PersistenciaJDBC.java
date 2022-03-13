@@ -578,8 +578,10 @@ public class PersistenciaJDBC implements InterfacePersistencia {
 
             PreparedStatement ps = this.con.prepareStatement("SELECT r.id,r.orientacao,r.consulta_id,c.observacao as consulta_observacao FROM receita r " +
                     "JOIN consulta c ON c.id = r.consulta_id " +
+                    "WHERE r.orientacao LIKE ? "+
                     "ORDER BY id ASC");
 
+            ps.setString(1,filter+"%");
             ResultSet rs = ps.executeQuery();
 
             while (rs.next()) {
